@@ -26,7 +26,7 @@ public class Main {
             session.connect();
             System.out.println("Connected");
 
-            Channel channel=session.openChannel("exec");
+            Channel channel = session.openChannel("exec");
             ((ChannelExec)channel).setCommand(command1);
             channel.setInputStream(null);
             ((ChannelExec)channel).setErrStream(System.err);
