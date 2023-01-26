@@ -6,17 +6,19 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /**
- * @author World
+ * @author Ruvim Piholyuk
  */
 public class Main {
-
     public static void main(String[] args) {
+        /*
+        * Ssh username, password, and host
+        */
         String user = "jair";
         String password = "group1";
         String host = "192.168.166.235";
-        String command1="ls";
-        try{
+        String command1="ps";
 
+        try{
             java.util.Properties config = new java.util.Properties();
             config.put("StrictHostKeyChecking", "no");
             JSch jsch = new JSch();
